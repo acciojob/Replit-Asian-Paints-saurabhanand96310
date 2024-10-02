@@ -25,7 +25,7 @@ body{
 	justify-content:center;
 	flex-direction:column;
 }
-.grid-container{
+.grid-item{
 	display:flex;
 	/* flex-wrap:nowrap; */
 }
