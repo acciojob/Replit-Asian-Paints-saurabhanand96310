@@ -7,10 +7,9 @@ const boxs=document.querySelectorAll(".colorBox");
 
 colorbtn.addEventListener("click",()=>{
 	const blockValue=blockInput.value;
-	// const colorValue=colorInput.value;
+	const colorValue=colorInput.value;
 	for(let i=0;i<boxs.length;i++){
-		if(i+1===blockValue){
-			boxs[i+1].style.backgroundColor="red"
+		if(i+1==blockValue){
+			boxs[i].style.backgroundColor=`${colorValue}`
 		}
 	}
-})
