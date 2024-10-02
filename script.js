@@ -2,7 +2,7 @@
 const blockInput = document.querySelector("#block_id");
 const colorInput = document.querySelector("#colour_id");  // Corrected the ID
 const colorbtn = document.querySelector("#change_button");
-const resetbtn = document.querySelector("#Reset");
+const resetbtn = document.querySelector("#reset_button");
 const boxes = document.querySelectorAll(".colorBox");
 
 colorbtn.addEventListener("click", () => {
@@ -23,6 +23,6 @@ colorbtn.addEventListener("click", () => {
 // Reset button functionality to clear all colors
 resetbtn.addEventListener("click",()=>{
     for(let i=0;i<boxes.length;i++){
-        boxes[i].style.backgroundColor='transpatent';
+        boxes[i].style.backgroundColor='';
     }
 })
